@@ -27,7 +27,9 @@ out/
 .settings
 .springBeans
 .sts4-cache
+.metadata
 bin/
+*.launch
 !**/src/main/**/bin/
 !**/src/test/**/bin/
 
@@ -43,3 +45,9 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+# other
+eclipse
+
+# Files from Forge MDK
+forge*changelog.txt
