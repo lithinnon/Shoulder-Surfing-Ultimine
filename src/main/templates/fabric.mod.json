@@ -9,5 +9,9 @@
     "main": [
       "io.github.lithinnon.shouldersurfingultimine.loaders.fabric.FabricEntrypoint"
     ]
+  },
+  "depends": {
+    "ftbultimine": "*",
+    "shouldersurfing": "*"
   }
 }

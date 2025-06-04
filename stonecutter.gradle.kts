@@ -14,5 +14,21 @@ allprojects {
         mavenLocal()
         maven("https://maven.neoforged.net/releases")
         maven("https://maven.fabricmc.net/")
+        maven("https://www.cursemaven.com/") {
+            content {
+                includeGroup("curse.maven")
+            }
+        }
+        maven("https://raw.githubusercontent.com/Fuzss/modresources/main/maven/")
+        maven("https://maven.architectury.dev/") {
+            content {
+                includeGroup("dev.architectury")
+            }
+        }
+        maven("https://maven.ftb.dev/releases/") {
+            content {
+                includeGroup("dev.ftb.mods")
+            }
+        }
     }
 }
