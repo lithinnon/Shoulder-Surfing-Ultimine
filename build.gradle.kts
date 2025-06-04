@@ -118,17 +118,18 @@ stonecutter {
 dependencies {
     modstitch.loom {
         modstitchModRuntimeOnly("net.fabricmc.fabric-api:fabric-api:${property("deps.fabric_api")}")
+        modstitchModRuntimeOnly("dev.architectury:architectury-fabric:${property("deps.architectury")}")
         modstitchModRuntimeOnly("fuzs.forgeconfigapiport:forgeconfigapiport-fabric:${property("deps.forgeconfigapiport")}")
         modstitchModRuntimeOnly("dev.ftb.mods:ftb-library-fabric:${property("deps.ftblibrary")}") { isTransitive = false }
         modstitchModImplementation("dev.ftb.mods:ftb-ultimine-fabric:${property("deps.ftbultimine")}")
     }
 
     modstitch.moddevgradle {
+        modstitchModRuntimeOnly("dev.architectury:architectury-neoforge:${property("deps.architectury")}")
         modstitchModRuntimeOnly("dev.ftb.mods:ftb-library-neoforge:${property("deps.ftblibrary")}")
         modstitchModImplementation("dev.ftb.mods:ftb-ultimine-neoforge:${property("deps.ftbultimine")}")
     }
 
     // Anything else in the dependencies block will be used for all platforms.
-    modstitchModRuntimeOnly("curse.maven:architectury-api-419699:${property("deps.architectury_api")}")
     modstitchModImplementation("curse.maven:shoulder-surfing-reloaded-243190:${property("deps.shouldersurfing")}")
 }
