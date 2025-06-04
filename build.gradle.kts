@@ -44,6 +44,7 @@ modstitch {
             // modstitch doesn't initially support. Some examples below.
             put("mod_issue_tracker", "https://github.com/modunion/modstitch/issues")
             put("mod_license", "MIT")
+            put("mod_description", "A Shoulder Surfing Reloaded plugin that supports FTB Ultimine on client-side.")
             put("pack_format", when (property("deps.minecraft")) {
                 "1.20.1" -> 15
                 "1.21.1" -> 48
