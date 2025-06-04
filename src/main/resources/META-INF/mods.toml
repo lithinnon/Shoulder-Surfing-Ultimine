@@ -70,11 +70,13 @@ description='''${mod_description}'''
     modId = "ftbultimine"
     mandatory = true
     ordering = "NONE"
+    versionRange = "[2001.1.5,)"
     side = "BOTH"
 
 [[dependencies.${mod_id}]]
     modId = "shouldersurfing"
     mandatory = true
+    versionRange = "[1.20.1-4.12.0,1.20.1-5.0.0)"
     ordering = "NONE"
     side = "CLIENT"
 
