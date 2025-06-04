@@ -125,9 +125,10 @@ dependencies {
     }
 
     modstitch.moddevgradle {
-        modstitchModRuntimeOnly("dev.architectury:architectury-neoforge:${property("deps.architectury")}")
-        modstitchModRuntimeOnly("dev.ftb.mods:ftb-library-neoforge:${property("deps.ftblibrary")}")
-        modstitchModImplementation("dev.ftb.mods:ftb-ultimine-neoforge:${property("deps.ftbultimine")}")
+        val loader = if (modstitch.isModDevGradleRegular) "neoforge" else "forge"
+        modstitchModRuntimeOnly("dev.architectury:architectury-${loader}:${property("deps.architectury")}")
+        modstitchModRuntimeOnly("dev.ftb.mods:ftb-library-${loader}:${property("deps.ftblibrary")}")
+        modstitchModImplementation("dev.ftb.mods:ftb-ultimine-${loader}:${property("deps.ftbultimine")}")
     }
 
     // Anything else in the dependencies block will be used for all platforms.

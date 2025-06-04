@@ -11,25 +11,23 @@ description = '''${mod_description}'''
 authors = "${mod_author}"
 
 [[dependencies.${mod_id}]]
-modId = "neoforge"
-type = "required"
+modId = "forge"
+mandatory = true
 ordering = "NONE"
 side = "CLIENT"
 
 [[dependencies.${mod_id}]]
 modId = "minecraft"
-type = "required"
+mandatory = true
 
 [[dependencies.${mod_id}]]
 modId = "ftbultimine"
-type = "required"
-reason = "integration"
+mandatory = true
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.${mod_id}]]
 modId = "shouldersurfing"
-type = "required"
-reason = "integration"
+mandatory = true
 ordering = "NONE"
 side = "CLIENT"
