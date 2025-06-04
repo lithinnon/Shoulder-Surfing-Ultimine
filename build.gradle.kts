@@ -50,6 +50,11 @@ modstitch {
                 "1.21.1" -> 48
                 else -> throw IllegalArgumentException("Please store the resource pack version for ${property("deps.minecraft")} in build.gradle.kts! https://minecraft.wiki/w/Pack_format")
             }.toString())
+            put("deps_minecraft_range", "${property("deps.minecraft.range")}")
+            put("deps_ftbultimine_range", "${property("deps.ftbultimine.range")}")
+            put("deps_shouldersurfing_range", "${property("deps.shouldersurfing.range")}")
+            put("deps_neoforge_range", "${project.properties["deps.neoforge.range"]}")
+            put("deps_forge_range", "${project.properties["deps.forge.range"]}")
         }
     }
 

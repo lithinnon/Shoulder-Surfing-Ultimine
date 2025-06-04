@@ -12,7 +12,8 @@
     ]
   },
   "depends": {
-    "ftbultimine": "*",
-    "shouldersurfing": "*"
+    "minecraft": "${deps_minecraft_range}",
+    "ftbultimine": "${deps_ftbultimine_range}",
+    "shouldersurfing": "${deps_shouldersurfing_range}"
   }
 }

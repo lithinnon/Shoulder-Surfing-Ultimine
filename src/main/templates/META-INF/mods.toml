@@ -14,21 +14,25 @@ logoFile = "logo.png"
 [[dependencies.${mod_id}]]
 modId = "forge"
 mandatory = true
+versionRange = "${deps_forge_range}"
 ordering = "NONE"
 side = "CLIENT"
 
 [[dependencies.${mod_id}]]
 modId = "minecraft"
 mandatory = true
+versionRange = "${deps_minecraft_range}"
 
 [[dependencies.${mod_id}]]
 modId = "ftbultimine"
 mandatory = true
+versionRange = "${deps_ftbultimine_range}"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.${mod_id}]]
 modId = "shouldersurfing"
 mandatory = true
+versionRange = "${deps_shouldersurfing_range}"
 ordering = "NONE"
 side = "CLIENT"

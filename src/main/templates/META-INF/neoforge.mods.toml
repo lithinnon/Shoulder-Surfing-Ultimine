@@ -14,17 +14,20 @@ logoFile = "logo.png"
 [[dependencies.${mod_id}]]
 modId = "neoforge"
 type = "required"
+versionRange = "${deps_neoforge_range}"
 ordering = "NONE"
 side = "CLIENT"
 
 [[dependencies.${mod_id}]]
 modId = "minecraft"
 type = "required"
+versionRange = "${deps_minecraft_range}"
 
 [[dependencies.${mod_id}]]
 modId = "ftbultimine"
 type = "required"
 reason = "integration"
+versionRange = "${deps_ftbultimine_range}"
 ordering = "NONE"
 side = "BOTH"
 
@@ -32,5 +35,6 @@ side = "BOTH"
 modId = "shouldersurfing"
 type = "required"
 reason = "integration"
+versionRange = "${deps_shouldersurfing_range}"
 ordering = "NONE"
 side = "CLIENT"
