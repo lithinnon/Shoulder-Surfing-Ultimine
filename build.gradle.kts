@@ -31,7 +31,7 @@ modstitch {
     metadata {
         modId = "shouldersurfingultimine"
         modName = "Shoulder Surfing Ultimine"
-        modVersion = "1.0.0"
+        modVersion = "1.0.1"
         modGroup = "io.github.lithinnon"
         modAuthor = "lithinnon"
 
@@ -42,7 +42,7 @@ modstitch {
         replacementProperties.populate {
             // You can put any other replacement properties/metadata here that
             // modstitch doesn't initially support. Some examples below.
-            put("mod_issue_tracker", "https://github.com/modunion/modstitch/issues")
+            put("mod_issue_tracker", "https://github.com/lithinnon/Shoulder-Surfing-Ultimine/issues")
             put("mod_license", "MIT")
             put("mod_description", "A Shoulder Surfing Reloaded plugin that supports FTB Ultimine on client-side.")
             put("pack_format", when (property("deps.minecraft")) {
